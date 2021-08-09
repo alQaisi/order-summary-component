@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    background-position:top;
+    display: grid;
+    place-items: center;
+}
+.card{
+    background-color: white;
+    max-width:450px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-inline: 1.5rem;
+    margin:35px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-elms{
+    position: relative;
+    text-align: center;
+    margin:25px auto;
+    display: grid;
+    place-items: center;
+}
+.card-background img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-block-end: .25em;
+}
+p{
+    font-size: 1.10rem;
+    color: hsl(224, 23%, 55%);
+    line-height:1.6em;
+    padding-inline: 3rem;
+    padding-block-end:.85em ;
+}
+h4{
+    color: hsl(223, 47%, 23%);
+    margin-left: 15px;
+}
+h4::after{
+    content:"$59.99/year";
+    display: block;
+    margin-block-start:.25em;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 1rem;
+}
+a{
+    font-size: 1rem;
+    font-weight: 700;
+}
+a:link,a:visited{
+  color: hsl(245, 75%, 52%);  
+}
+a:hover,a:active{
+    filter: brightness(250%);
+    text-decoration: solid;
+}
+a{
+    margin-left: auto;
+}
+.offer-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:90%;
+    max-width:350px;
+    min-width:240px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 7px;
+    align-self: stretch;
+    padding:0 10px;
+}
+.buttons-cont,.offer-box{
+    box-sizing: border-box;
+    width:90%;
+}
+button{
+    all:unset;
+    font-weight: 700;
+    font-size: .95em;
+    display: block;
+    margin:1.5em auto;
+    letter-spacing: 1.15px;
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);;
+    transition: all .25s ease-in;
+}
+#button1{
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    width: 80%;
+    border-radius: 7px;
+    box-shadow: 3px 0px 30px -2px hsl(225, 100%, 98%);
+    -webkit-box-shadow: 3px 0px 30px -2px hsl(225, 100%, 98%);
+    -moz-box-shadow: 3px 0px 30px -2px hsl(225, 100%, 98%);
+}
+#button1:hover{
+    background-color: hsl(225, 88%, 67%);
+}
+#button2:hover{
+    color: black;
+}
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url('./images/pattern-background-mobile.svg')
+    }
+}
