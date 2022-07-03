@@ -48,11 +48,14 @@ p{
     padding-inline: 3rem;
     padding-block-end:.85em ;
 }
-h4{
+h2{
     color: hsl(223, 47%, 23%);
     margin-left: 15px;
+    font-size: 1rem;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
 }
-h4::after{
+h2::after{
     content:"$59.99/year";
     display: block;
     margin-block-start:.25em;
